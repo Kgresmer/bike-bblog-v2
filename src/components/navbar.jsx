@@ -62,7 +62,7 @@ export default function Navbar() {
           <MenuItem className={classes.menuItem} onClick={() => handleClose('/gallery')}>Gallery</MenuItem>
         </Menu>
         <Typography variant="h6" className={classes.title}>
-          News
+          120 Spokes
         </Typography>
         <Button color="inherit" className={classes.login}>Login</Button>
       </Toolbar>
