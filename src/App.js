@@ -11,13 +11,15 @@ function App() {
       <div className="App">
         <Navbar/>
 
-        <Switch>
-          <Route exact path='/' component={Home}/>
-          <Route path='/home' component={Home}/>
-          <Route path='/about' component={About}/>
-          <Route path='/tours' component={BikeTours}/>
-          <Route default component={Home}/>
-        </Switch>
+        <div className="body">
+          <Switch>
+            <Route exact path='/' component={Home}/>
+            <Route path='/home' component={Home}/>
+            <Route path='/about' component={About}/>
+            <Route path='/tours' component={BikeTours}/>
+            <Route default component={Home}/>
+          </Switch>
+        </div>
       </div>
     </Router>
   );

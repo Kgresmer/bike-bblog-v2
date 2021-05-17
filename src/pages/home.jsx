@@ -12,7 +12,20 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: 'cover'
   },
   carousel: {
-    maxHeight: '500px'
+    backgroundColor: 'white',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    height: '515px',
+    marginBottom: '75px'
+  },
+  whatIsItContainer: {
+    height: '500px',
+    backgroundColor: 'rgba(255, 255, 255, 1)',
+    marginBottom: '75px'
+  },
+  homeContainer: {
+    zIndex: '1000'
   }
 }));
 
@@ -20,14 +33,18 @@ export default function Home() {
   const classes = useStyles();
 
   return (
-    <>
-      <Carousel itemsToShow={1} showArrows={false} enableSwipe={false} enableMouseSwipe={false}>
+    <div className={classes.parallax}>
+      <div className={classes.homeContainer}>
         <div className={classes.carousel}>
-          <img src="logo512.png" alt=""/>
+          <Carousel itemsToShow={1} showArrows={false} enableSwipe={false} enableMouseSwipe={false}>
+            <img src="logo512.png" alt=""/>
+          </Carousel>
         </div>
-      </Carousel>
-      <p>Text over here</p>
-      <div className={classes.parallax}></div>
-    </>
+        <div className={classes.whatIsItContainer}>
+
+        </div>
+        <p>Text over here</p>
+      </div>
+    </div>
   )
 }
