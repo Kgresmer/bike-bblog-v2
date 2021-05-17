@@ -2,7 +2,8 @@ import './App.css';
 import Navbar from "./components/navbar";
 import Home from "./pages/home";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import Gallery from "./pages/gallery";
+import About from "./pages/about";
+import BikeTours from "./pages/bike-tours";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
         <Switch>
           <Route exact path='/' component={Home}/>
           <Route path='/home' component={Home}/>
-          <Route path='/gallery' component={Gallery}/>
+          <Route path='/about' component={About}/>
+          <Route path='/tours' component={BikeTours}/>
           <Route default component={Home}/>
         </Switch>
       </div>
