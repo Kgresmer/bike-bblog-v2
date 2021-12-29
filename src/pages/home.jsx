@@ -31,7 +31,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Home() {
   const classes = useStyles();
-
   return (
     <div className={classes.parallax}>
       <div className={classes.homeContainer}>
